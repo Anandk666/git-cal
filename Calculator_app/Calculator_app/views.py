@@ -6,7 +6,5 @@ from django.template import loader
 # upon function definition
 def hello_geeks (request) :
  
-    # This will return Hello welcome
-    # string as HttpResponse
   template = loader.get_template('myfirst.html')
   return HttpResponse(template.render())
